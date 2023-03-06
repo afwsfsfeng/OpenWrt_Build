@@ -23,7 +23,7 @@ sed -i '/root::0:0:99999/d' package/lean/default-settings/files/zzz-default-sett
 
 ##替换K3无线驱动为69027
 rm -rf ./package/lean/k3-brcmfmac4366c-firmware/files/lib/firmware/brcm/brcmfmac4366c-pcie.bin
-svn export https://github.com/afwsfsfeng/Phicomm-K3_Wireless-Firmware/trunk/brcmfmac4366c-pcie.phicomm,k3.bin ./package/lean/k3-brcmfmac4366c-firmware/files/lib/firmware/brcm/brcmfmac4366c-pcie.phicomm,k3.bin
+svn export https://github.com/afwsfsfeng/Phicomm-K3_Wireless-Firmware/trunk/brcmfmac4366c-pcie.phicomm,k3.bin ./package/lean/k3-brcmfmac4366c-firmware/files/lib/firmware/brcm/brcmfmac4366c-pcie.bin
 
 
 ##取消bootstrap为默认主题
