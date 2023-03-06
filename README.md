@@ -30,7 +30,7 @@
 
 ***
 
-* 不出意外，固件每周五上午更新！[此处寻找自己的设备下载固件](https://github.com/xiangfeidexiaohuo/OpenWrt_Build/releases)
+* 不出意外，固件每周五上午更新！[此处寻找自己的设备下载固件](https://github.com/afwsfsfeng/OpenWrt_Build/releases)
 
 ```
 固件管理ip：192.168.2.1  
