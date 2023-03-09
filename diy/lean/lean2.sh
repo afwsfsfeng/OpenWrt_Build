@@ -22,15 +22,15 @@ sed -i 's/192.168.1.1/192.168.2.1/g' package/base-files/files/bin/config_generat
 sed -i '/root::0:0:99999/d' package/lean/default-settings/files/zzz-default-settings
 
 ##替换K3无线驱动为69027
-rm -rf ./package/lean/k3-brcmfmac4366c-firmware/files/lib/firmware/brcm/brcmfmac4366c-pcie.bin
-svn export https://github.com/afwsfsfeng/Phicomm-K3_Wireless-Firmware/trunk/brcmfmac4366c-pcie.phicomm,k3.bin ./package/lean/k3-brcmfmac4366c-firmware/files/lib/firmware/brcm/brcmfmac4366c-pcie.bin
+#rm -rf ./package/lean/k3-brcmfmac4366c-firmware/files/lib/firmware/brcm/brcmfmac4366c-pcie.bin
+#svn export https://github.com/afwsfsfeng/Phicomm-K3_Wireless-Firmware/trunk/brcmfmac4366c-pcie.phicomm,k3.bin ./package/lean/k3-brcmfmac4366c-firmware/files/lib/firmware/brcm/brcmfmac4366c-pcie.bin
 
 
 ##取消bootstrap为默认主题
 sed -i '/set luci.main.mediaurlbase=\/luci-static\/bootstrap/d' feeds/luci/themes/luci-theme-bootstrap/root/etc/uci-defaults/30_luci-theme-bootstrap
 sed -i 's/luci-theme-bootstrap/luci-theme-argon-18.06/g' feeds/luci/collections/luci/Makefile
 sed -i 's/luci-theme-bootstrap/luci-theme-argon-18.06/g' feeds/luci/collections/luci-nginx/Makefile
-##sed -i 's/bin/phicomm,k3.bin/2g' package/lean/k3-brcmfmac4366c-firmware/Makefile
+sed -i 's/bin/phicomm,k3.bin/2g' package/lean/k3-brcmfmac4366c-firmware/Makefile
 
 
 ##加入作者信息
